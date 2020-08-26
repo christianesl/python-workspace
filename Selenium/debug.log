@@ -1,0 +1,2 @@
+[0826/132434.295:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\CHRIST~1.SAL\AppData\Local\Temp\scoped_dir2400_1923458474\Crashpad: The system cannot find the file specified. (0x2)
+[0826/132642.187:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
