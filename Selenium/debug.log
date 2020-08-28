@@ -1,2 +1,7 @@
 [0826/132434.295:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\CHRIST~1.SAL\AppData\Local\Temp\scoped_dir2400_1923458474\Crashpad: The system cannot find the file specified. (0x2)
 [0826/132642.187:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0826/132810.783:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0826/173007.829:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0826/173007.844:ERROR:exception_snapshot_win.cc(98)] thread ID 14724 not found in process
+[0826/173008.047:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0826/173008.188:ERROR:exception_snapshot_win.cc(98)] thread ID 14176 not found in process
