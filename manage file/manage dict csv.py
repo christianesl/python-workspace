@@ -1,3 +1,5 @@
+import csv
+
 #reading from the csv
 with open('software.csv') as software:
 	reader = csv.DictReader(software)
@@ -13,4 +15,5 @@ keys = ["name", "username", "deparment"]
 with open('by_department.csv', 'w') as by_department:
 	writer = csv.DictWriter(by_department, fieldnames=keys)
 	writer.writeheader()
+	
 	writer.writerows(users)
