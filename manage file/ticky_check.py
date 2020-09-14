@@ -9,16 +9,15 @@ import operator #to sort dictionaries
 error = {}
 per_user = {}
 
-#regex 
+#regex
 regex_error = r'ERROR(.*)\((.*)\)'
 regex_info = r'\((.*)\)'
 
 # retrieve data form syslog file
 with open('syslog.log') as syslog:
-	for row in syslog:
-		row.strip()
+	for row in syslog:		
 		# add data to dictionaries
-		if 'ERROR' in row: #ERROR			
+		if 'ERROR' in row: #ERROR
 			res = re.search(regex_error, row)
 			error_type = res.group(1)
 			error_type = error_type.strip()
@@ -60,7 +59,7 @@ with open('user_statistics.csv', 'w') as user_csv:
 	row[1] = "INFO"
 	row.append("ERROR")
 	writer.writerow(row)
-	
+
 	for key in sorted(per_user.keys()):
 		row[0] = str(key)
 		row[1] = str(per_user[key][0])
