@@ -12,9 +12,7 @@ def get_pathlist(folder):
     pathlist = []
 
     for root, dirs, files in os.walk(folder):
-        path = root[len(folder):]
-        print(dirs)
-        print(files)
+        path = root[len(folder):]        
         if dirs != []:
             for d in dirs:
                 pathlist.append((path, d))
